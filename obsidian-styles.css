@@ -469,7 +469,7 @@ body {
 	{
 		padding:0;
 		display:flex;
-		display:row nowrap;
+		flex-flow:row nowrap;
 	}
 	
 	.tabbar.maintabbar
