@@ -452,3 +452,23 @@ body {
     padding: 5px 12px;
     font-size: 10pt;
 }
+
+@media only screen and (max-width:450px)
+{
+	.teamlist .team small
+	{
+		padding:0;
+		padding-right:5px;
+		display:flex;
+		display:column nowrap;
+	}
+	
+	.teamlist .team
+	{
+		width:96%;
+		text-align:left;
+		display:flex;
+		flex-flow:row nowrap;
+		height:65px;
+	}
+}
