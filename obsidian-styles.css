@@ -461,13 +461,13 @@ body {
 		display:flex;
 		flex-flow:column nowrap;
 		width:96%;
-		height:65px;
+		height:auto;
+		padding:5px;
 	}
 	
 	.teamlist .team small
 	{
 		padding:0;
-		padding-right:5px;
 		display:flex;
 		display:row nowrap;
 	}
