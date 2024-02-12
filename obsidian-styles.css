@@ -471,4 +471,9 @@ body {
 		display:flex;
 		display:row nowrap;
 	}
+	
+	.tabbar.maintabbar
+   	{
+        	margin-right:90px;
+    	}
 }
