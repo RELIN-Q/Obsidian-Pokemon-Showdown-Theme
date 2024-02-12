@@ -460,7 +460,7 @@ body {
 		padding:0;
 		padding-right:5px;
 		display:flex;
-		display:column nowrap;
+		flex-flow:column nowrap;
 	}
 	
 	.teamlist .team
