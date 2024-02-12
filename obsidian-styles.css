@@ -455,20 +455,20 @@ body {
 
 @media only screen and (max-width:450px)
 {
+	.teamlist .team
+	{
+		text-align:left;
+		display:flex;
+		flex-flow:column nowrap;
+		width:96%;
+		height:65px;
+	}
+	
 	.teamlist .team small
 	{
 		padding:0;
 		padding-right:5px;
 		display:flex;
-		flex-flow:row nowrap;
-	}
-	
-	.teamlist .team
-	{
-		width:96%;
-		text-align:left;
-		display:flex;
-		flex-flow:column nowrap;
-		height:65px;
+		display:row nowrap;
 	}
 }
