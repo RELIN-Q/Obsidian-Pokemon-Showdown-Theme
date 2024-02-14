@@ -500,4 +500,15 @@ body {
         max-width:100%;
         width:auto;
     }
+
+@media only screen and (max-width:350px) {
+	.movemenu {
+            flex-flow: column wrap;
+            max-width: 90%;
+        }
+
+        .movemenu button {
+            margin: 4px 0;
+        }
+    }
 }
