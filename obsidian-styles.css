@@ -1,514 +1,545 @@
-body {
-    background: #080808 !important;
-}
-
-.mainmenu {
-    padding: 0;
-}
-
-.leftmenu {
-    padding: 20px 0 0;
-}
-
-.mainmenufooter {
-    bottom: 20px;
-    left: 20px;
-}
-
-.menugroup {
-    margin: 0 auto 10px;
-    background: #000;
-}
-
-.menugroup .button {
-    outline: none;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: "Arial Black", Helvetica, Arial, sans-serif !important;
-    color: #fff !important;
-    text-shadow: 0 -1px -1px #000 !important;
-    border: solid 0px #22252A !important;
-    background: #2E3135 !important;
-    margin: 0 5px !important;
-}
-
-.menugroup .button.big {
-    margin: 0 auto !important;
-}
-
-.battleform .select,
-.dark .ps-popup {
-    background: #2E3135 !important;
-    color: #fff !important;
-}
-
-.battleform .select {
-    width: 100%;
-    height: auto;
-    padding: 9px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 1px rgba(255, 255, 255, .8);
-}
-
-.battleform .checkbox {
-    text-align: center;
-}
-
-.dark .select::after,
-.popupmenu details > summary strong {
-    color: #fff !important;
-}
-
-.dark .team {
-    background: #2E3135 !important;
-    color: #fff;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 1px rgba(255, 255, 255, .8);
-}
-
-.dark .team:hover {
-    color: #fff;
-    background: hsl(214, 7%, 10%) !important;
-}
-
-.option,
-.ps-popup {
-    padding: 5px;
-    margin: 1px 0;
-    width: 100%;
-    max-width: 220px;
-}
-
-.popupmenu .option,
-.popupmenu .button {
-    width: 100%;
-    max-width: 300px;
-}
-
-.popupmenu i {
-    margin-left: 10px;
-}
-
-.button:hover,
-.dark .select:hover {
-    background: hsl(214, 7%, 10%) !important;
-}
-
-.dark .select:disabled {
-    background: hsl(214, 7%, 10%) !important;
-    border: none;
-}
-
-.tabbar a.button {
-    padding: 4px 8px !important;
-    margin: 0 6px;
-}
-
-.tabbar .closebutton {
-    width: auto;
-    margin-left: -20px;
-}
-
-.siderooms {
-    margin-left: 480px !important;
-}
-
-.dark .folderlist .foldersep::before,
-.dark .folderlistafter::before,
-.dark .folderlistbefore::before,
-.dark .folderpane h3,
-.dark .folder .selectFolder,
-.dark .folderhack1,
-.dark .folderhack2 {
-    background: hsl(214, 0%, 17%) !important;
-    color: #fff !important;
-}
-
-.folder.cur .selectFolder,
-.folder.cur .selectFolder:hover,
-.folder.cur .selectFolder:active {
-    padding-left: 8px;
-}
-
-.dark .folder .selectFolder:hover {
-    background: hsl(214, 0%, 9%) !important;
-}
-
-.folder .selectFolder {
-    padding-left: 8px;
-}
-
-.movemenu {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.megaevo {
-    background: hsl(214, 0%, 17%) !important;
-    color: #fff;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 1px rgba(255, 255, 255, .8);
-    border: none;
-    padding: 5px;
-}
-
-.megaevo:hover {
-    background: hsl(214, 0%, 9%) !important;
-    color: #fff;
-}
-
-.allyparty button,
-.switchmenu button {
-    width: 100px;
-}
-
-.allyparty button .hpbar,
-.switchmenu button .hpbar {
-    opacity: 1;
-    border-radius: 0;
-    height: 1px;
-    right: 3px;
-}
-
-.dark .ps-room.ps-room-opaque,
-.dark .battle-log-add,
-.dark .battle-controls {
-    background: hsl(0, 0%, 8%);
-}
-
-.movemenu button.type-Bug {
-    background: linear-gradient(to bottom, #ADD080, #90C12D);
-}
-
-.movemenu button.type-Dark {
-    background: linear-gradient(to bottom, #908D96, #5A5366);
-}
-
-.movemenu button.type-Dragon {
-    background: linear-gradient(to bottom, #7A99CF, #0A6DC4);
-}
-
-.movemenu button.type-Electric {
-    background: linear-gradient(to bottom, #F6DC85, #F4D23C);
-}
-
-.movemenu button.type-Fairy {
-    background: linear-gradient(to bottom, #F2ADEC, #ED8FE6);
-}
-
-.movemenu button.type-Fighting {
-    background: linear-gradient(to bottom, #D98698, #CE406A);
-}
-
-.movemenu button.type-Fire {
-    background: linear-gradient(to bottom, #FFB68D, #FF9C54);
-}
-
-.movemenu button.type-Flying {
-    background: linear-gradient(to bottom, #AEBDE4, #8FA8DD);
-}
-
-.movemenu button.type-Ghost {
-    background: linear-gradient(to bottom, #8E97BE, #5369AC);
-}
-
-.movemenu button.type-Grass {
-    background: linear-gradient(to bottom, #94CC8F, #63BB5B);
-}
-
-.movemenu button.type-Ground {
-    background: linear-gradient(to bottom, #E19F87, #D97745);
-}
-
-.movemenu button.type-Ice {
-    background: linear-gradient(to bottom, #9CDACD, #73CEC0);
-}
-
-.movemenu button.type-Normal {
-    background: linear-gradient(to bottom, #ACB4B7, #9099A1);
-}
-
-.movemenu button.type-Poison {
-    background: linear-gradient(to bottom, #BE98D5, #AB6AC8);
-}
-
-.movemenu button.type-Psychic {
-    background: linear-gradient(to bottom, #FA9C9D, #F97177);
-}
-
-.movemenu button.type-Rock {
-    background: linear-gradient(to bottom, #D3C8A8, #C7B78B);
-}
-
-.movemenu button.type-Steel {
-    background: linear-gradient(to bottom, #90ACB8, #598EA1);
-}
-
-.movemenu button.type-Water {
-    background: linear-gradient(to bottom, #8CADE0, #4E90D6);
-}
-
-.movemenu button.type-Bug:hover {
-    background: linear-gradient(to bottom, #F4FEA5, #ADDF4A);
-}
-
-.movemenu button.type-Dark:hover {
-    background: linear-gradient(to bottom, #CDC4F3, #A18DD5);
-}
-
-.movemenu button.type-Dragon:hover {
-    background: linear-gradient(to bottom, #90DCFE, #4B9FDD);
-}
-
-.movemenu button.type-Electric:hover {
-    background: linear-gradient(to bottom, #FEFF9B, #F4D23B);
-}
-
-.movemenu button.type-Fairy:hover {
-    background: linear-gradient(to bottom, #FECAFE, #ED8FE7);
-}
-
-.movemenu button.type-Fighting:hover {
-    background: linear-gradient(to bottom, #FEB0D0, #E46A93);
-}
-
-.movemenu button.type-Fire:hover {
-    background: linear-gradient(to bottom, #FDE0A9, #FE9D54);
-}
-
-.movemenu button.type-Flying:hover {
-    background: linear-gradient(to bottom, #C5DCFE, #8FB5E6);
-}
-
-.movemenu button.type-Ghost:hover {
-    background: linear-gradient(to bottom, #B5C5FF, #8293D8);
-}
-
-.movemenu button.type-Grass:hover {
-    background: linear-gradient(to bottom, #D0FEC0, #7ED878);
-}
-
-.movemenu button.type-Ground:hover {
-    background: linear-gradient(to bottom, #FEC99A, #F3915E);
-}
-
-.movemenu button.type-Ice:hover {
-    background: linear-gradient(to bottom, #CBFEFE, #87E3D4);
-}
-
-.movemenu button.type-Normal:hover {
-    background: linear-gradient(to bottom, #FFFFFF, #D1DAE2);
-}
-
-.movemenu button.type-Poison:hover {
-    background: linear-gradient(to bottom, #F6BEFD, #C685E3);
-}
-
-.movemenu button.type-Psychic:hover {
-    background: linear-gradient(to bottom, #FCD5E3, #FE8A90);
-}
-
-.movemenu button.type-Rock:hover {
-    background: linear-gradient(to bottom, #F0E6A9, #C8B78B);
-}
-
-.movemenu button.type-Steel:hover {
-    background: linear-gradient(to bottom, #B4F2FE, #79ADC2);
-}
-
-.movemenu button.type-Water:hover {
-    background: linear-gradient(to bottom, #9EE6FE, #68ABF1);
-}
-
-.movemenu button {
-    font-family: "Arial Black", "Helvetica", sans-serif !important;
-    letter-spacing: 0.5px;
-    font-size: 1em;
-    padding: 5px 10px;
-    margin: 4px;
-    border-radius: 5px !important;
-    width: 100%;
-    height: auto;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 -1px 2px #000;
-    text-shadow: -1px 1px 1px rgba(255, 255, 255, 0.5);
-    border: none;
-}
-
-.moveselect button {
-    padding: 5px 0px;
-}
-
-.movebuttons-nomax {
-    display: flex;
-    flex: 1 0 70%;
-}
-
-.movemenu button.type-Bug small,
-.movemenu button.type-Dark small,
-.movemenu button.type-Dragon small,
-.movemenu button.type-Electric small,
-.movemenu button.type-Fairy small,
-.movemenu button.type-Fighting small,
-.movemenu button.type-Fire small,
-.movemenu button.type-Flying small,
-.movemenu button.type-Ghost small,
-.movemenu button.type-Grass small,
-.movemenu button.type-Ground small,
-.movemenu button.type-Ice small,
-.movemenu button.type-Normal small,
-.movemenu button.type-Poison small,
-.movemenu button.type-Psychic small,
-.movemenu button.type-Rock small,
-.movemenu button.type-Steel small,
-.movemenu button.type-Water small {
-    color: black;
-    text-shadow: -1px 1px 1px rgba(255, 255, 255, 0.5);
-    font-size: 0.75em;
-}
-
-.switchmenu {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-.switchmenu button {
-    margin: 4px 2px;
-    background: hsl(0, 0%, 85%) !important;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 -1px 2px #000;
-    color: #000;
-}
-
-.switchmenu button:hover {
-    background: hsl(0, 0%, 75%) !important;
-}
-
-.moveselect button,
-.switchselect button {
-    padding: 5px 10px 2px 20px;
-}
-
-.allyparty button.disabled,
-.allyparty button:disabled,
-.switchmenu button.disabled,
-.switchmenu button:disabled,
-.movemenu button:disabled {
-    background-color: hsl(0, 0%, 25%) !important;
-    color: hsl(0, 0%, 50%) !important;
-}
-
-.leftbar {
-    background-color: unset;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
-    border-right: 0;
-    height: 360px;
-    color: #000;
-}
-
-.trainer-near {
-    bottom: 0;
-}
-
-.rightbar {
-    background-color: unset;
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
-    border-left: 0;
-    height: 360px;
-    color: #000;
-}
-
-.trainer-far {
-    top: 10px;
-    bottom: unset;
-}
-
-.trainer-div {
-    opacity: 1;
-}
-
-.innerbattle img {
-    image-rendering: crisp-edges;
-    image-rendering: -moz-crisp-edges;
-    /* Firefox */
-    image-rendering: -o-crisp-edges;
-    /* Opera */
-    image-rendering: -webkit-optimize-contrast;
-    /* Chrome (and eventually Safari) */
-    -ms-interpolation-mode: nearest-neighbor;
-    /* IE8+ */
-}
-
-.turn {
-    top: unset;
-    bottom: 5px;
-    left: unset;
-    right: 5px;
-}
-
-.timerbutton {
-    padding: 5px 12px;
-    font-size: 10pt;
-}
-
-@media only screen and (max-width:450px)
-{
-	.teamlist .team
-	{
-		text-align:left;
-		display:flex;
-		flex-flow:column nowrap;
-		width:96%;
-		height:65px;
-		padding:5px 10px;
-	}
-	
-	.teamlist .team small
-	{
-		padding:0;
-		display:flex;
-		flex-flow:row nowrap;
-        justify-content:center;
-	}
-    
-    .tabbar.maintabbar
-    {
-        margin-right:90px;
-    }
-    
-    .pad
-    {
-        display:flex;
-        flex-flow:row nowrap;
-        justify-content:space-between;
-    }
-    
-    .pad .textbox.teamnameedit,.pad button
-    {
-        font-size:16px;
-    }
-    
-    .setdetails,.setstats,.statrow
-    {
-        font-size:7pt;
-    }
-    
-    .teamnameedit
-    {
-        max-width:100%;
-        width:auto;
+    body {
+        background: #080808 !important;
     }
 
-@media only screen and (max-width:350px) {
-	.movemenu {
-            flex-flow: column wrap;
-            max-width: 90%;
+    .mainmenu {
+        padding: 0;
+    }
+
+    .leftmenu {
+        padding: 20px 0 0;
+    }
+
+    .mainmenufooter {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .menugroup {
+        margin: 0 auto 10px;
+        background: #000;
+    }
+
+    .menugroup .button {
+        outline: none;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        font-family: "Arial Black", "Gadget", sans-serif !important;
+        color: #fff !important;
+        text-shadow: 0 -1px -1px #000 !important;
+        border: solid 0px #22252A !important;
+        background: #2E3135 !important;
+        margin: 0 5px !important;
+    }
+
+    .menugroup .button.big {
+        margin: 0 auto !important;
+    }
+
+    .battleform .select,
+    .dark .ps-popup {
+        background: #2E3135 !important;
+        color: #fff !important;
+    }
+
+    .battleform .select {
+        width: 100%;
+        height: auto;
+        padding: 9px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 1px rgba(255, 255, 255, .8);
+    }
+
+    .battleform .checkbox {
+        text-align: center;
+    }
+
+    .dark .select::after,
+    .popupmenu details > summary strong {
+        color: #fff !important;
+    }
+
+    .dark .team {
+        background: #2E3135 !important;
+        color: #fff;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 1px rgba(255, 255, 255, .8);
+    }
+
+    .dark .team:hover {
+        color: #fff;
+        background: hsl(214, 7%, 10%) !important;
+    }
+
+    .option,
+    .ps-popup {
+        padding: 5px;
+        margin: 1px 0;
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .popupmenu .option,
+    .popupmenu .button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .popupmenu i {
+        margin-left: 10px;
+    }
+
+    .button:hover,
+    .dark .select:hover {
+        background: hsl(214, 7%, 10%) !important;
+    }
+
+    .dark .select:disabled {
+        background: hsl(214, 7%, 10%) !important;
+        border: none;
+    }
+
+    .tabbar a.button {
+        padding: 4px 8px !important;
+        margin: 0 6px;
+    }
+
+    .tabbar .closebutton {
+        width: auto;
+        margin-left: -20px;
+    }
+
+    .siderooms {
+        margin-left: 480px !important;
+    }
+
+    .dark .folderlist .foldersep::before,
+    .dark .folderlistafter::before,
+    .dark .folderlistbefore::before,
+    .dark .folderpane h3,
+    .dark .folder .selectFolder,
+    .dark .folderhack1,
+    .dark .folderhack2 {
+        background: hsl(214, 0%, 17%) !important;
+        color: #fff !important;
+    }
+
+    .folder.cur .selectFolder,
+    .folder.cur .selectFolder:hover,
+    .folder.cur .selectFolder:active {
+        padding-left: 8px;
+    }
+
+    .dark .folder .selectFolder:hover {
+        background: hsl(214, 0%, 9%) !important;
+    }
+
+    .folder .selectFolder {
+        padding-left: 8px;
+    }
+
+    .allyparty button,
+    .switchmenu button {
+        width: 100px;
+    }
+
+    .allyparty button .hpbar,
+    .switchmenu button .hpbar {
+        opacity: 1;
+        border-radius: 0;
+        height: 1px;
+        right: 3px;
+    }
+
+    .dark .ps-room.ps-room-opaque,
+    .dark .battle-log-add,
+    .dark .battle-controls {
+        background: hsl(0, 0%, 8%);
+    }
+    
+    .movemenu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .movemenu button {
+        font-family: "Arial Black", "Gadget", sans-serif !important;
+        letter-spacing: 0.5px;
+        font-size: 1em;
+        padding: 7px 10px;
+        margin: 4px;
+        border-radius: 5px !important;
+        box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.7), inset 0 -2px 2px rgba(0, 0, 0, 0.7);
+        text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+        border: none;
+        flex: 0 1 35%;
+        max-height: 60px;
+        min-height: 45px;
+        width: 100%;
+        min-width: 157px;
+    }
+
+    .movebuttons-nomax {
+        display: flex;
+        flex: 1 0 70%;
+    }
+    
+    .tiny-layout .movecontrols,
+    .tiny-layout .switchcontrols {
+        margin-top: 20px;
+    }
+
+    .megaevo {
+        background: hsl(214, 0%, 17%) !important;
+        color: #fff;
+        box-shadow: inset 0 1px 2px rgba(255, 255, 255, .7), inset 0 1px 1px rgba(0, 0, 0, .7);
+        border: none;
+        padding: 5px;
+        left: 0;
+        width: 70%;
+    }
+
+    .megaevo:hover {
+        background: hsl(214, 0%, 9%) !important;
+        color: #fff;
+    }
+    
+    .movemenu button.type-Bug {
+        background: linear-gradient(to bottom, #D8E030, #A8B820);
+    }
+
+    .movemenu button.type-Dark {
+        background: linear-gradient(to bottom, #A8A878, #705848);
+    }
+
+    .movemenu button.type-Dragon {
+        background: linear-gradient(to bottom, #B8A0F8, #7038F8);
+    }
+
+    .movemenu button.type-Electric {
+        background: linear-gradient(to bottom, #F8F878, #F8D030);
+    }
+
+    .movemenu button.type-Fairy {
+        background: linear-gradient(to bottom, #F8DFF8, #F5BAD9);
+    }
+
+    .movemenu button.type-Fighting {
+        background: linear-gradient(to bottom, #F08030, #C03028);
+    }
+
+    .movemenu button.type-Fire {
+        background: linear-gradient(to bottom, #F8D030, #F08030);
+    }
+
+    .movemenu button.type-Flying {
+        background: linear-gradient(to bottom, #C8C0F8, #A890F0);
+    }
+
+    .movemenu button.type-Ghost {
+        background: linear-gradient(to bottom, #A890F0, #705898);
+    }
+
+    .movemenu button.type-Grass {
+        background: linear-gradient(to bottom, #C0F860, #78C850);
+    }
+
+    .movemenu button.type-Ground {
+        background: linear-gradient(to bottom, #F8F878, #E0C068);
+    }
+
+    .movemenu button.type-Ice {
+        background: linear-gradient(to bottom, #D0F8E8, #98D8D8);
+    }
+
+    .movemenu button.type-Normal {
+        background: linear-gradient(to bottom, #D8D8C0, #A8A878);
+    }
+
+    .movemenu button.type-Poison {
+        background: linear-gradient(to bottom, #D880B8, #A040A0);
+    }
+
+    .movemenu button.type-Psychic {
+        background: linear-gradient(to bottom, #F8C0B0, #F85888);
+    }
+
+    .movemenu button.type-Rock {
+        background: linear-gradient(to bottom, #E0C068, #B8A038);
+    }
+
+    .movemenu button.type-Steel {
+        background: linear-gradient(to bottom, #B8B8D0, #807870);
+    }
+
+    .movemenu button.type-Water {
+        background: linear-gradient(to bottom, #98D8D8, #6890F0);
+    }
+
+    /* START HOVER BUTTON EFFECTS */
+    .movemenu button.type-Bug:hover {
+        background: #AABB22;
+    }
+
+    .movemenu button.type-Dark:hover {
+        background: #775544;
+    }
+
+    .movemenu button.type-Dragon:hover {
+        background: #7766EE;
+    }
+
+    .movemenu button.type-Electric:hover {
+        background: #FFCC33;
+    }
+
+    .movemenu button.type-Fairy:hover {
+        background: #FFAAFF;
+    }
+
+    .movemenu button.type-Fighting:hover {
+        background: #BB5544;
+    }
+
+    .movemenu button.type-Fire:hover {
+        background: #FF4422;
+    }
+
+    .movemenu button.type-Flying:hover {
+        background: #6699FF;
+    }
+
+    .movemenu button.type-Ghost:hover {
+        background: #6666BB;
+    }
+
+    .movemenu button.type-Grass:hover {
+        background: #77CC55;
+    }
+
+    .movemenu button.type-Ground:hover {
+        background: #DDBB55;
+    }
+
+    .movemenu button.type-Ice:hover {
+        background: #77DDFF;
+    }
+
+    .movemenu button.type-Normal:hover {
+        background: #BBBBAA;
+    }
+
+    .movemenu button.type-Poison:hover {
+        background: #AA5599;
+    }
+
+    .movemenu button.type-Psychic:hover {
+        background: #FF5599;
+    }
+
+    .movemenu button.type-Rock:hover {
+        background: #BBAA66;
+    }
+
+    .movemenu button.type-Steel:hover {
+        background: #AAAABB;
+    }
+
+    .movemenu button.type-Water:hover {
+        background: #3399FF;
+    }
+
+    .movemenu button.type-Bug small,
+    .movemenu button.type-Dark small,
+    .movemenu button.type-Dragon small,
+    .movemenu button.type-Electric small,
+    .movemenu button.type-Fairy small,
+    .movemenu button.type-Fighting small,
+    .movemenu button.type-Fire small,
+    .movemenu button.type-Flying small,
+    .movemenu button.type-Ghost small,
+    .movemenu button.type-Grass small,
+    .movemenu button.type-Ground small,
+    .movemenu button.type-Ice small,
+    .movemenu button.type-Normal small,
+    .movemenu button.type-Poison small,
+    .movemenu button.type-Psychic small,
+    .movemenu button.type-Rock small,
+    .movemenu button.type-Steel small,
+    .movemenu button.type-Water small {
+        color: black;
+        text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+        font-size: 0.75em;
+    }
+
+    .switchmenu {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        flex-flow: row wrap;
+    }
+
+    .switchmenu button {
+        margin: 4px 2px;
+        background: hsl(0, 0%, 85%) !important;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 -1px 2px #000;
+        color: #000;
+    }
+
+    .switchmenu button:hover {
+        background: hsl(0, 0%, 75%) !important;
+    }
+
+    .moveselect button,
+    .switchselect button {
+        padding: 0px;
+        margin: 0 auto;
+        font-family: "Arial Black", "Gadget", sans-serif !important;
+        color: #fff !important;
+    }
+
+    .allyparty button.disabled,
+    .allyparty button:disabled,
+    .switchmenu button.disabled,
+    .switchmenu button:disabled,
+    .movemenu button:disabled {
+        background-color: hsl(0, 0%, 25%) !important;
+        color: hsl(0, 0%, 50%) !important;
+    }
+
+    .leftbar {
+        background-color: unset;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, .7), rgba(255, 255, 255, 0.7));
+        border-right: 0;
+        height: 360px;
+        color: #000;
+    }
+
+    .trainer-near {
+        bottom: 0;
+    }
+
+    .rightbar {
+        background-color: unset;
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+        border-left: 0;
+        height: 360px;
+        color: #000;
+    }
+
+    .trainer-far {
+        top: 10px;
+        bottom: unset;
+    }
+
+    .trainer-div {
+        opacity: 1;
+    }
+
+    .innerbattle img {
+        image-rendering: crisp-edges;
+        image-rendering: -moz-crisp-edges;
+        /* Firefox */
+        image-rendering: -o-crisp-edges;
+        /* Opera */
+        image-rendering: -webkit-optimize-contrast;
+        /* Chrome (and eventually Safari) */
+        -ms-interpolation-mode: nearest-neighbor;
+        /* IE8+ */
+    }
+
+    .turn {
+        top: unset;
+        bottom: 5px;
+        left: unset !important;
+        right: 5px;
+    }
+
+    .timerbutton {
+        padding: 5px 12px;
+        font-size: 10pt;
+    }
+
+    .battle-controls .whatdo {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .whatdo strong {
+        margin: 0 4px;
+    }
+
+    .battle-controls .whatdo small {
+        margin: 0 auto 0 10px;
+        height: 100%;
+    }
+
+    @media only screen and (max-width:640px) {
+        .teamlist .team {
+            text-align: left;
+            display: flex;
+            flex-flow: column nowrap;
+            width: 96%;
+            height: auto;
+            padding: 5px 10px;
+        }
+
+        .teamlist .team small {
+            padding: 0;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+
+        .tabbar.maintabbar {
+            margin-right: 90px;
+        }
+
+        .pad {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        .pad .textbox.teamnameedit,
+        .pad button {
+            font-size: 16px;
+        }
+
+        .setdetails,
+        .setstats,
+        .statrow {
+            font-size: 7pt;
+        }
+
+        .teamnameedit {
+            max-width: 100%;
+            width: auto;
         }
 
         .movemenu button {
-            margin: 4px 0;
+            height: auto;
         }
     }
-}
+
+    @media only screen and (max-width:350px) {
+        .movemenu {
+            flex-flow: row wrap;
+            max-width: 90%;
+            margin-bottom: 10px;
+        }
+
+        .movemenu button {
+            flex: 0 1 0%;
+            word-break: break-word;
+            min-width: 110px;
+        }
+        .battle-controls .whatdo {
+            flex-flow: row wrap;
+        }
+    }
