@@ -11,8 +11,10 @@
     }
 
     .mainmenufooter {
-        bottom: 20px;
-        left: 20px;
+        position:relative;
+        bottom: 0px;
+        left: 0px;
+        margin:15px 20px;
     }
 
     .menugroup {
@@ -478,6 +480,67 @@
         margin: 0 auto 0 10px;
         height: 100%;
     }
+    
+    .teamchart
+    {
+        padding:0;
+    }
+    
+    .teamchart li
+    {
+        display:flex;
+        flex-flow:column nowrap;
+        margin:0 auto;
+    }
+    
+    .dark .setchart, .dark .setchart-nickname
+    {
+        background-color:#222;
+    }
+    
+    .dark .textbox
+    {
+        background:#111;
+    }
+    
+    .dark .textbox:hover
+    {
+        background:#000;
+    }
+    
+    .teambuilderformatselect
+    {
+        width: 100%;
+        height: auto;
+        padding: 9px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 1px rgba(255, 255, 255, .8);
+        background:#2E3135 !important;
+        color:#fff !important;
+        margin-bottom:15px;
+    }
+    
+    .teamchart li.format-select
+    {
+        width: 40%;
+    }
+    
+    .teamchart
+    {
+        display:flex;
+        flex-flow:column wrap;
+    }
+    
+    #pokepasteForm
+    {
+        display:flex;
+        flex-flow:column nowrap;
+        justify-content:center;
+    }
+    
+    .pad p
+    {
+        margin:20px 0 10px !important;
+    }
 
     @media only screen and (max-width:640px) {
         .teamlist .team {
@@ -524,6 +587,11 @@
 
         .movemenu button {
             height: auto;
+        }
+        
+        .textbox
+        {
+            font-size:16px;
         }
     }
 
